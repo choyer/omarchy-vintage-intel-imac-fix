@@ -1,0 +1,10 @@
+f8f7de6fb299acc87d5d3528ec6feff8146e06cb17286b3f739ae152320567f5  ./.gitignore
+aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3  ./LICENSE
+6dae0cf49fc07cfc38c3ceb47f7792760c177606e7978e481eb5bf276fa041f1  ./README.md
+6b33d9c82907caf73321345657827d5e7e35ee2d2684d4a286d32c346a2ff915  ./docs/technical-notes.md
+19d6f48364105f4f8817b6babb12b4c9c3d1c2e1c8b67fb085137dd7c5e71d0c  ./patches/0001-imac10-1-hd4670-panel-and-encoder.patch
+a066453068de4e2de69499db2617421b78f8e3e95391003eca5ac79d20325ffd  ./patches/0002-standalone-module-build.patch
+6f3ca650663165cb517ad2c1acf1a6e22469902a3ce376307bc7ec5b32dc101e  ./scripts/build.sh
+3701a69fa94597cd314c6bc3f65afdc94a3d09becf1569a55ff7fde087388386  ./scripts/check-hardware.sh
+01468eebeaf4ab1ae67844a09f7f8cdbcf3dcc0c34b19c9ecba617a8d30db6c0  ./scripts/install.sh
+fec8088657dff9079bd5b5c618bc9b09ff1fdebfe6c7498af8d5b9d825689966  ./scripts/uninstall.sh

@@ -1,0 +1,5 @@
+/build/
+*.log
+*.efi
+*.ko
+*.ko.zst
