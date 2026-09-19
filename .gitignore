@@ -1,0 +1,11 @@
+  # Generated binaries and release archives
+  *.efi
+  *.pkg.tar.zst
+  *.pkg.tar.zst.sig
+  *.tar.zst
+  *.tar.zst.sha256
+
+  # Generated build/release directories
+  dist/
+  work/
+  releases/
