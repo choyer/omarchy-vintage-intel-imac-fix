@@ -1,0 +1,16 @@
+pkgname=hyprland
+pkgver=0.56.2
+pkgrel=2.1
+pkgdesc='Hyprland with the llvmpipe border alpha fix for vintage Intel iMac Radeon scanout'
+arch=(x86_64)
+url='https://github.com/hyprwm/Hyprland'
+license=(BSD-3-Clause)
+provides=(wayland-compositor)
+depends=(cairo aquamarine libaquamarine.so=14-64 gcc-libs glibc glib2 glslang hyprcursor hyprgraphics hyprland-guiutils hyprlang hyprutils hyprwayland-scanner hyprwire lcms2 libdrm libglvnd libinput libx11 libxcb libxcomposite libxcursor libxfixes libxkbcommon libxrender lua mesa muparser opengl-driver pango pixman re2 tomlplusplus util-linux-libs libuuid wayland wayland-protocols xcb-proto xcb-util xcb-util-errors xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm xorg-xwayland)
+options=(!debug)
+
+package() {
+  : "${HYPRLAND_BUILD_DIR:?Set HYPRLAND_BUILD_DIR to the completed CMake build}"
+  DESTDIR="$pkgdir" cmake --install "$HYPRLAND_BUILD_DIR"
+  install -Dm644 "${HYPRLAND_SOURCE_DIR:?}/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

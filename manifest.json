@@ -1,0 +1,13 @@
+{
+  "name": "omarchy-vintage-intel-imac-fix",
+  "kernel_version": "7.2.5-3-omarchy",
+  "radeon_srcversion": "8164D8D20B481AC8C7896C9",
+  "radeon_device": "1002:9488",
+  "radeon_subsystem": "106b:00b6",
+  "uki_name": "omarchy-imac-radeon-fix.efi",
+  "limine_entry": "Omarchy iMac Radeon + Hyprland fix",
+  "recovery_entry": "Omarchy Radeon iMac Recovery Console",
+  "hyprland_version": "0.56.2",
+  "hyprland_commit": "efb50993780079460b0cbed1363e2166a2de1d9f",
+  "kernel_arguments": ["radeon.dpm=0", "radeon.pcie_gen2=0", "radeon.uvd=0"]
+}

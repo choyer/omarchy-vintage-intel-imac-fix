@@ -1,0 +1,17 @@
+diff --git a/src/render/shaders/glsl/border.glsl b/src/render/shaders/glsl/border.glsl
+index 57b68be..5c7f313 100644
+--- a/src/render/shaders/glsl/border.glsl
++++ b/src/render/shaders/glsl/border.glsl
+@@ -92,12 +92,9 @@ vec4
+         float smallest = min(min(distanceT, distanceB), min(distanceL, distanceR));
+ 
+         if (smallest > thick)
+-            discard;
++            additionalAlpha = 0.0;
+     }
+ 
+-    if (additionalAlpha == 0.0)
+-        discard;
+-
+     pixColor = getColorForCoord(v_texcoord, gradientLength, gradient, angle, gradient2Length, gradient2, angle2, gradientLerp);
+     pixColor.rgb *= pixColor[3];
