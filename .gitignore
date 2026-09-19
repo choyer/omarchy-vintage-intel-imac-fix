@@ -14,3 +14,5 @@
 *.pkg.tar.zst.sig
 *.tar.zst
 *.tar.zst.sha256
+__pycache__/
+*.py[cod]
